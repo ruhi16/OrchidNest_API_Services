@@ -24,7 +24,7 @@ app.get('/', (req, res)=>{
 
 
 const authRoute = require("./routes/auth.route");
-app.use('/api/users', authRoute);
+app.use('/api/v1/users', authRoute);
 
 
 

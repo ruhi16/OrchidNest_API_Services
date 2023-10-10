@@ -368,7 +368,7 @@ router.get('/', async(req, res, next) => {
                 .exec();        
 
         req.user = user;
-        console.log(req.payload);
+        //console.log(req.payload);
 
         res.send({
             user: req.user            
