@@ -370,9 +370,9 @@ router.get('/', async(req, res, next) => {
         req.user = user;
         //console.log(req.payload);
 
-        res.send({
-            user: req.user            
-        });
+        res.send(
+            req.user           
+        );
 
     }catch(err){
         next(createError.Unauthorized(err.message));
